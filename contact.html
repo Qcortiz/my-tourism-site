@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Техническая поддержка</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f0e1;
+            color: #5b3a29;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #f2d6a1;
+            color: #5b3a29;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 2px solid #b5956f;
+            position: relative;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+        }
+        .home-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #cda15d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .home-button:hover {
+            background-color: #d49d57;
+        }
+        .main-content {
+            padding: 40px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #f2d6a1;
+            color: #5b3a29;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-info {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- Кнопка на главную в левом верхнем углу -->
+        <button class="home-button" onclick="window.location.href='/'">На главную</button>
+        <h1>Техническая поддержка</h1>
+    </div>
+    <div class="main-content">
+        <h2>Обратитесь к нам</h2>
+        <div class="contact-info">
+            <p>Для того чтобы обратиться в техническую поддержку, используйте один из следующих способов:</p>
+            <p><strong>Телефон:</strong> +78912345678</p>
+            <p><strong>Email:</strong> <a href="mailto:turism@mail.ru">turism@mail.ru</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Туристическая фирма. Все права защищены.</p>
+    </div>
+</body>
+</html>

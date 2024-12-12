@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Купить билет</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f0e1;
+            color: #5b3a29;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #f2d6a1;
+            color: #5b3a29;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 2px solid #b5956f;
+            position: relative; /* Для позиционирования кнопки */
+        }
+        .header h1 {
+            font-size: 2.5rem;
+        }
+        .home-button {
+            position: absolute; /* Позиционируем кнопку */
+            top: 10px; /* Отступ сверху */
+            left: 10px; /* Отступ слева */
+            background-color: #cda15d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .home-button:hover {
+            background-color: #d49d57;
+        }
+        .main-content {
+            padding: 40px;
+            text-align: center;
+        }
+        .form-container {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .button {
+            background-color: #cda15d;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .button:hover {
+            background-color: #d49d57;
+        }
+        .footer {
+            background-color: #f2d6a1;
+            color: #5b3a29;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- Кнопка на главную в левом верхнем углу -->
+        <button class="home-button" onclick="window.location.href='/'">На главную</button>
+        <h1>Купить билет</h1>
+    </div>
+    <div class="main-content">
+        <div class="form-container">
+            <h2>Выберите город и оплатите билет</h2>
+            <form action="/process-payment" method="POST">
+                <label for="city">Город</label>
+                <select id="city" name="city">
+                    <option value="moscow">Москва</option>
+                    <option value="saint-petersburg">Санкт-Петербург</option>
+                    <option value="novosibirsk">Новосибирск</option>
+                    <option value="ekaterinburg">Екатеринбург</option>
+                    <option value="kazan">Казань</option>
+                    <option value="sochi">Сочи</option>
+                </select>
+
+                <label for="amount">Сумма (руб.):</label>
+                <input type="number" id="amount" name="amount" min="1" required>
+
+                <label for="payment">Способ оплаты</label>
+                <select id="payment" name="payment">
+                    <option value="credit-card">Кредитная карта</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Банковский перевод</option>
+                </select>
+
+                <button type="submit" class="button">Оплатить</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Туристическая фирма. Все права защищены.</p>
+    </div>
+</body>
+</html>

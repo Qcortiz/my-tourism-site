@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристическая фирма</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f0e1;
+            color: #5b3a29;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #f2d6a1;
+            color: #5b3a29;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 2px solid #b5956f;
+            position: relative;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+        }
+        .home-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #cda15d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .home-button:hover {
+            background-color: #d49d57;
+        }
+        .main-content {
+            padding: 40px;
+            text-align: center;
+        }
+        .buttons {
+            margin-top: 30px;
+        }
+        .button {
+            background-color: #cda15d;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .button:hover {
+            background-color: #d49d57;
+        }
+        .footer {
+            background-color: #f2d6a1;
+            color: #5b3a29;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- Кнопка на главную в левом верхнем углу -->
+        <button class="home-button" onclick="window.location.href='/'">На главную</button>
+        <h1>Туристическая фирма</h1>
+    </div>
+    <div class="main-content">
+        <h2>Добро пожаловать в нашу туристическую фирму!</h2>
+        <p>Мы предлагаем лучшие туры по России и СНГ. Откройте для себя удивительные путешествия с нами!</p>
+
+        <div class="buttons">
+            <!-- Кнопки навигации -->
+            <button class="button" onclick="window.location.href='/about'">О нас</button>
+            <button class="button" onclick="window.location.href='/buy-ticket'">Купить билет</button>
+            <button class="button" onclick="window.location.href='/popular-trips'">Популярные поездки</button>
+            <button class="button" onclick="window.location.href='/contact'">Есть вопросы?</button>
+        </div>
+
+        <div class="text-content">
+            <h3>Экскурсионные туры по России и СНГ</h3>
+            <p>Россия - крупнейшая по площади страна с неисчислимыми достопримечательностями, с богатейшей историей и природой, в которой представлены все географические зоны, остается во многом неизведанной для большинства ее жителей. Турфирма "Вокруг света" предлагает свою помощь в организации поездок по родной стране, а также организует туры по странам СНГ.</p>
+
+            <h4>Чем славится Россия?</h4>
+            <p>Прежде всего богатой историей. Во время путешествий вы узнаете много нового о событиях, происходивших в том или ином регионе, а сведения, известные по учебникам, возможно, повернутся к вам неожиданной стороной. Впечатления, которые оставят у вас экскурсионные туры из Москвы от нашей компании, наверняка вызовут желание вновь и вновь отправиться в путешествие по России — увидеть знаменитые достопримечательности, ощутить дух местности, почувствовать дыхание истории. Если вас не привлекает прошлое, то просто наслаждайтесь поездкой по родным просторам, прекрасными пейзажами и природными достопримечательностями.</p>
+
+            <h4>Отправляемся в столицу!</h4>
+            <p>Экскурсии по Москве пользуются огромной популярностью, ведь именно в столице происходило множество значимых для страны событий. У нас вы подберёте подходящие вам туры из Москвы – однодневные или на несколько дней. Во время такого небольшого путешествия вы узнаете много интересного о регионах России, о жизни людей в прошлом и настоящем в разных частях страны. Программа многодневных поездок более разнообразна и насыщена, что даёт возможность более подробно ознакомиться с многими популярными достопримечательностями.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Турист
